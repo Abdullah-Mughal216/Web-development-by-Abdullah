@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/responsive.css" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(206, 206, 206);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li a{
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+}
+.main{
+    /* margin-top: px; */
+    line-height: 70px;
+}
+.logo img{
+    margin-left: 30px;
+    border-radius: 200px;
+    border: 2px solid black;
+    height: 70px;
+    width: 70px;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+}
+.welcome{
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+    color: white;
+    position: relative;
+    padding: 100px;
+    background-image: url(/Class1.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+    animation-name: animate2;
+    animation-direction: alternate-reverse;
+    animation-duration: 25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+    
+    /* animation: wlcome 4sec timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes animate2 {
+    0%{
+        background-image: url(/Class2.jpg);
+    }
+    25%{
+        background-image: url(/Class3.jpg);
+    }
+    50%{
+        background-image: url(/Class4.jpg);
+    }
+    75%{
+        background-image: url(/class5.jpg);
+    }
+    100%{
+        background-image: url(/class6.jpg);
+    }
+    125%{
+        background-image: url(/class7.jpg);
+    }
+}
+
+.heading{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+/* height: 100%;
+    width: 100%;   
+    background-image: url(/Study4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; */
+    .img img{
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    .introduction1{
+        display: flex;
+        width: 80%;
+        padding: 20px;
+        margin: 35px auto;
+    }
+    .introduction2{
+        flex-direction: row-reverse;
+        display: flex;
+        width: 80%;
+        padding: 20px;
+        margin: 35px auto;
+    }
+    .introduction3{
+        display: flex;
+        width: 80%;
+        padding: 20px;
+        margin: 35px auto;
+    }
+    .introduction4{
+        flex-direction: row-reverse;
+        display: flex;
+        width: 80%;
+        padding: 20px;
+        margin: 35px auto;
+    }
+.intro-img img{
+    border: 1px solid black;
+    border-radius: 100px;
+    height: 140px;
+    width: 140px;
+}
+.intro-about1{
+    padding-right: 40px;
+}
+.intro-about2{
+    padding-left: 40px;
+}
+.intro-about3{
+    padding-right: 40px;
+}
+.intro-about4{
+    padding-left: 40px;
+}
+.intro-heiding{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+
+
+
+/* Form admission  */
+.registration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* for responsive */
+@media only screen and (max-width: 650px) {
+    nav ul li a{
+        font-size: 20px;
+    }
+    .logo img{
+        /* margin-top: 20px; */
+        height: 80px;
+        width: 80px;
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .navbar{
+        height: 170px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    nav ul li a{
+        font-size: 18px;
+        padding: 5px 5px;
+    }
+    .logo img{
+        margin-top: 20px;
+    }
+  }
+
+
+@media only screen and (max-width: 550px) {
+    .welcome{
+        padding: 35px;
+        height: 600px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .introduction1{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+    .intro-about1{
+        /* text-align: center; */
+        padding-right: 0px;
+            padding-top: 15px;
+    }
+    .introduction2{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+    .intro-about2{
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+    .introduction3{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+    .intro-about3{
+        text-align: center;
+        padding-right: 0px;
+        padding-top: 15px;
+    }
+    .introduction4{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+    .intro-about4{
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 350px) {
+    nav ul li a{
+        margin: 0px 4px;
+        font-size: 18px;
+        padding: 2px 2px;
+    }
+  }
+@media only screen and (max-width: 350px) {
+    .welcome{
+        padding: 35px;
+        height: 800px;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="/academy logo.png" alt="" srcset="" />
+      </div>
+      <div class="main">
+        <nav>
+          <ul>
+            <li><a href="#" a>Home</a></li>
+            <li><a href="#" a>About</a></li>
+            <li><a href="#" a>Setting</a></li>
+            <li><a href="#" a>Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="welcome">
+      <h1 class="wel">welcome to our academy</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      voluptatem, quis, molestiae minima assumenda nesciunt quos labore eos
+      dolores, doloremque dicta accusantius, repudiandae autem numquam dicta et
+      aperiam eveniet ratione unde? Fuga delectus est veritatis minus laudantium
+      necessitatibus totam quo. Deleniti, blanditiis vel nisi in optio quo nam
+      placeat eveniet saepe dignissimos, reprehenderit dolores deserunt
+      laudantium rerum? Tempore facilis, facere, eius nulla nostrum pariatur
+      laboriosam animi, consequuntur repellat eveniet esse quia nobis totam?
+      Unde repellendus suscipit sit nisi nihil earum commodi dolor vel delectus
+      voluptatum ipsum quis fugiat nostrum dolore quae minus, natus laborum hic
+      fugit tenetur facilis accusantium culpa deserunt. Rem ipsam tempore
+      dolorem aliquid non unde cupiditate reprehenderit harum provident quo
+      numquam, quasi dicta nostrum ab culpa, ullam assumenda asperiores ad
+      accusamus vitae quidem adipisci voluptatibus cum. Et, sunt unde amet cum
+      ipsum aliquid? Cumque doloremque atque inventore in voluptas itaque
+      quaerat exercitationem quam commodi, rem et aspernatur molestias repellat!
+    </div>
+    <hr />
+    <div class="introduction1">
+      <div class="intro-about1">
+        <div class="intro-heiding">Our-Experience</div>
+        <p class="intro-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          repellendus eius quidem recusandae nemo explicabo veniam natus eos
+          corporis placeat quae commodi atque voluptate illo autem dignissimos,
+          neque officia inventore quam! Veritatis odit provident officia
+          assumenda quisquam dolorum consequatur sapiente sequi modi, fugiat
+          fuga officiis, deleniti amet natus recusandae dolores, inventore error
+          laudantium tempora. Expedita.
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="/Experience.jpg" alt="" srcset="" />
+      </div>
+    </div>
+
+    <div class="introduction2">
+      <div class="intro-about2">
+        <div class="intro-heiding">Well-Educated Staff</div>
+        <p class="intro-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          repellendus eius quidem recusandae nemo explicabo veniam natus eos
+          corporis placeat quae commodi atque voluptate illo autem dignissimos,
+          neque officia inventore quam! Veritatis odit provident officia
+          assumenda quisquam dolorum consequatur sapiente sequi modi, fugiat
+          fuga officiis, deleniti amet natus recusandae dolores, inventore error
+          laudantium tempora. Expedita.
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="/Educated staff.png" alt="" srcset="" />
+      </div>
+    </div>
+
+    <div class="introduction3">
+      <div class="intro-about3">
+        <div class="intro-heiding">Top-Positions Lahore</div>
+        <p class="intro-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          repellendus eius quidem recusandae nemo explicabo veniam natus eos
+          corporis placeat quae commodi atque voluptate illo autem dignissimos,
+          neque officia inventore quam! Veritatis odit provident officia
+          assumenda quisquam dolorum consequatur sapiente sequi modi, fugiat
+          fuga officiis, deleniti amet natus recusandae dolores, inventore error
+          laudantium tempora. Expedita.
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="/First positions.png" alt="" srcset="" />
+      </div>
+    </div>
+
+    <div class="introduction4">
+      <div class="intro-about4">
+        <div class="intro-heiding">Excellent-Environment</div>
+        <p class="intro-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          repellendus eius quidem recusandae nemo explicabo veniam natus eos
+          corporis placeat quae commodi atque voluptate illo autem dignissimos,
+          neque officia inventore quam! Veritatis odit provident officia
+          assumenda quisquam dolorum consequatur sapiente sequi modi, fugiat
+          fuga officiis, deleniti amet natus recusandae dolores, inventore error
+          laudantium tempora. Expedita.
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="/envirement.png" alt="" srcset="" />
+      </div>
+    </div>
+
+  </body>
+</html>
